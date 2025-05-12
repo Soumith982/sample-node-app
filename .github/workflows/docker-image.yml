@@ -13,4 +13,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag sample-nodejs-app-v1:$(date +%s)
+      run: cd sample-node-app && docker build -t sample-node-app .
