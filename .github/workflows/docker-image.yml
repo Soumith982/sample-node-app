@@ -19,6 +19,6 @@ jobs:
   execute:
      runs-on: [self-hosted, linux, x64]
      steps:
-    - name: make the container live on the VM
-      run: docker run  -d -p 8080:8080 --name sample-node-app-container  sample-nodejs-app-v1:$(date +%s)
+      - name: make the container live on the VM
+        run: docker run  -d -p 8080:8080 --name sample-node-app-container  sample-nodejs-app-v1:$(date +%s)
      
