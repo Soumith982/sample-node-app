@@ -2,8 +2,8 @@ name: Docker Image CI
 
 on:
   push:
-    branches: [ "Soumith982-patch-1" ]
-
+    branches: [ "master" ]
+  workflow_dispatch:
 jobs:
 
   build:
